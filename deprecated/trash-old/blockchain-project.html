@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" type="text/css" href="side-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Oskar Klonowski</title>
+  </head>
+
+  <body>
+    <div id="Name">
+      <p>Oskar Klonowski</p>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-align-right"></i></button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="content-box">
+          <h1>Blockchain</h1>
+        <div class="left-div">
+          <code>
+            import hashlib as hasher<br>
+            import datetime as date<br>
+            <br>
+            print(date.datetime.now())<br>
+            <br>
+            class Block:<br>
+              def __init__(self, index, timestamp, data, previous_hash):<br>
+                self.index = index<br>
+                self.timestamp = timestamp<br>
+                self.data = data<br>
+                self.previous_hash = previous_hash<br>
+                self.hash = self.hash_block()<br>
+                <br>
+              def hash_block(self):<br>
+                sha = hasher.sha256()<br>
+                sha.update((str(self.index) + <br>
+                           str(self.timestamp) + <br>
+                           str(self.data) + <br>
+                           str(self.previous_hash)).encode('utf-8'))<br>
+                return sha.hexdigest()<br>
+                <br>
+            def create_genesis_block():<br>
+                return Block(0, date.datetime.now(), 'Genesis Block', '0')<br>
+                <br>
+            def next_block(last_block):<br>
+              this_index = last_block.index + 1<br>
+              this_timestamp = date.datetime.now() <br>
+              this_data = "Hey! I'm block " + str(this_index)<br>
+              this_hash = last_block.hash<br>
+              return Block(this_index, this_timestamp, this_data, this_hash)<br>
+              <br>
+            blockchain = [create_genesis_block()]<br>
+            previous_block = blockchain[0]<br>
+            <br>
+            num_of_blocks_to_add = 15<br>
+            <br>
+            for i in range(0, num_of_blocks_to_add):<br>
+              block_to_add = next_block(previous_block)<br>
+              blockchain.append(block_to_add)<br>
+              previous_block = block_to_add<br>
+              # Tell everyone about it!<br>
+              print ('Block #{} has been added to the blockchain!'.format(block_to_add.index))<br>
+              print ('Hash: {}n'.format(block_to_add.hash))<br>
+            </code>
+        </div>
+        <div class="right-div">
+            <p>This is a simple blockchain project which uses Python3 to create a conceptual chain of blocks representing bitcoin currency blocks each with a unique hash code providing security.</p>
+
+        </div>
+      </div>
+
+
+
+  </body>
+
+</html>

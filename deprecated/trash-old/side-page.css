@@ -1,0 +1,137 @@
+body {
+    font-family: 'Slabo 27px', serif;
+    background-color: #FBF9FF;
+}
+#Name {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    margin-left: 55px;
+    font-size: 30px;
+    font-weight: 50;
+    opacity: 0.2;
+}
+
+.header {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    margin-left: 800px;
+}
+  
+.link {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 25px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+#Home-navbar:hover {
+    color: grey;
+}
+#Work-navbar:hover {
+    color: grey;
+}
+#Contact-navbar:hover {
+    color: grey;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #FBF9FF;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 1070px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    min-width: 120px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    background-color: #FBF9FF;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #FBF9FF;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content-box {
+    margin: 20px;
+    padding: 15px 20px 15px 20px;
+    background-color: #3A3335;
+    height: 1100px;
+    color: #FBF9FF;
+    text-align: center;
+    border-style: round;
+}
+#allign-left {
+    text-align: left;
+}
+
+.left-div {
+    float: left;
+    text-align: left;
+    width: 50%;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.right-div {
+    float: right;
+    text-align: left;
+    width: 50%;
+    margin-left: 108px;
+}
+
+.image-portfolio {
+    padding-right: 22px;
+    padding-bottom: 22px;
+
+}
+
+.content-box2 {
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: #3A3335;
+    color: #FBF9FF;
+    text-align: center;
+}
+
+#map {
+    align-content: center;
+    text-align: center;
+}
