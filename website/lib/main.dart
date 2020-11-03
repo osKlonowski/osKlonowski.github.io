@@ -9,35 +9,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Oskar Klonowski',
       theme: ThemeData(
         textTheme: GoogleFonts.ralewayTextTheme(
           Theme.of(context).textTheme,
         ),
       ),
-      home: MyHomePage(title: 'Oskar Klonowski'),
+      home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Oskar Klonowski'),
       ),
       body: Center(
         child: Text(
-          'Welcome',
+          'Welcome To My Website',
         ),
       ),
     );
