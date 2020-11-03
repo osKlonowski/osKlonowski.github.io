@@ -21,9 +21,6 @@ jobs:
           flutter build web --release
           cd build/web
           git init
-          # type configurations: your user.email and user.name followed lines 
-          # git config --global user.email your_email 
-          # git config --global user.name your_name 
           git config --global user.email osklonowski@gmail.com
           git config --global user.name osKlonowski
           git status
