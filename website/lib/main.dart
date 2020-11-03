@@ -29,7 +29,11 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          'Welcome',
+          'Welcome.',
+          style: TextStyle(
+            fontSize: 48,
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
     );
