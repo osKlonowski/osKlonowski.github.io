@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
+import 'package:website/views/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,34 +9,18 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return MaterialApp(
       title: 'Oskar Klonowski',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.ralewayTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Oskar Klonowski'),
-      ),
-      body: Center(
-        child: Text(
-          'Welcome.',
-          style: TextStyle(
-            fontSize: 48,
-            fontWeight: FontWeight.w700,
+          // textTheme: GoogleFonts.ralewayTextTheme(
+          //   Theme.of(context).textTheme,
+          // ),
           ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
