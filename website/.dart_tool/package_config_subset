@@ -6,6 +6,10 @@ async
 2.10
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0-nullsafety.1/
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0-nullsafety.1/lib/
+auto_size_text
+2.0
+file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/auto_size_text-2.1.0/
+file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/auto_size_text-2.1.0/lib/
 boolean_selector
 2.10
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0-nullsafety.1/
@@ -118,6 +122,10 @@ responsive_builder
 2.1
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_builder-0.1.9/
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_builder-0.1.9/lib/
+scrollable_positioned_list
+2.3
+file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/scrollable_positioned_list-0.1.8/
+file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/scrollable_positioned_list-0.1.8/lib/
 source_span
 2.10
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0-nullsafety.2/
@@ -150,6 +158,10 @@ vector_math
 2.10
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0-nullsafety.3/
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0-nullsafety.3/lib/
+velocity_x
+2.6
+file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/velocity_x-1.0.1/
+file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/velocity_x-1.0.1/lib/
 win32
 2.7
 file:///Users/oskarklonowski/flutter/.pub-cache/hosted/pub.dartlang.org/win32-1.7.3/
